@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Chery Jabar | Dealer Resmi Mobil Chery Jawa Barat - www.pusatcheryjabar.com</title>
+    <meta name="description" content="Dealer Resmi Mobil Chery Wilayah Jawa Barat (Bandung, Cianjur, Bogor, Sukabumi, Garut, Sumedang, Tasikmalaya). Info produk, harga OTR terbaru, dan booking test drive Chery Q EV, C5 CSH, Tiggo 8 CSH, Tiggo Cross CSH, Tiggo 9 CSH, dan J6 Series.">
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        chery: {
+                            red: '#D91E2A',
+                            darkRed: '#B0151F',
+                            dark: '#111827',
+                            slate: '#1F2937',
+                            Black: '#000000',
+                            metallic: '#9CA3AF'
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to right, rgba(17, 24, 39, 0.94) 0%, rgba(17, 24, 39, 0.78) 55%, rgba(17, 24, 39, 0.45) 100%)",
+                        'metallic-grad': "linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%)",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-chery-red selection:text-white">
+
+    <!-- Top Info Bar -->
+    <div class="bg-chery-dark text-gray-300 text-xs py-2 border-b border-gray-800 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-globe text-chery-red mr-1.5"></i> Official Portal: <strong class="text-white">www.pusatcheryjabar.com</strong></span>
+                <span><i class="fa-solid fa-location-dot text-chery-red mr-1.5"></i> Melayani Seluruh Wilayah Jawa Barat</span>
+            </div>
+            <div class="flex items-center space-x-5">
+                <span><i class="fa-solid fa-clock text-chery-red mr-1.5"></i> Senin - Minggu: 08.30 - 20.00 WIB</span>
+                <a href="#kontak-booking" class="text-white hover:text-chery-red font-medium transition">Layanan Home Test Drive <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar / Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#beranda" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-chery-red to-chery-darkRed flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                        <!-- Custom Chery-inspired Geometric Emblem SVG -->
+                        <svg class="w-7 h-7" viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 4L8 34H17L32 15L47 34H56L32 4Z" fill="white"/>
+                            <path d="M18 22H46L42 27H22L18 22Z" fill="white" fill-opacity="0.85"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-chery-dark leading-none">
+                            PUSAT CHERY <span class="text-chery-red">JABAR</span>
+                        </div>
+                        <p class="text-[11px] font-medium text-gray-500 tracking-wider uppercase mt-1">www.pusatcheryjabar.com</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#beranda" class="text-sm font-semibold text-gray-800 hover:text-chery-red transition">Beranda</a>
+                    <a href="#katalog" class="text-sm font-semibold text-gray-800 hover:text-chery-red transition">Katalog Model</a>
+                    <a href="#teknologi" class="text-sm font-semibold text-gray-800 hover:text-chery-red transition">Teknologi CSH & EV</a>
+                    <a href="#layanan" class="text-sm font-semibold text-gray-800 hover:text-chery-red transition">Layanan Dealer</a>
+                    <a href="#kontak-booking" class="text-sm font-semibold text-gray-800 hover:text-chery-red transition">Kontak</a>
+                </nav>
+
+                <!-- Desktop CTA Button -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#kontak-booking" onclick="presetBooking('', 'Booking Test Drive')" class="inline-flex items-center px-5 py-2.5 rounded-xl bg-chery-red hover:bg-chery-darkRed text-white text-sm font-semibold shadow-md shadow-red-600/20 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-steering-wheel mr-2"></i> Booking Test Drive
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center lg:hidden">
+                    <button id="mobile-menu-btn" type="button" aria-label="Buka Menu" class="p-2.5 rounded-xl text-gray-700 hover:bg-gray-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+            <a href="#beranda" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-gray-800 hover:bg-red-50 hover:text-chery-red">Beranda</a>
+            <a href="#katalog" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-gray-800 hover:bg-red-50 hover:text-chery-red">Katalog Model (6 Line-Up)</a>
+            <a href="#teknologi" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-gray-800 hover:bg-red-50 hover:text-chery-red">Teknologi CSH & EV</a>
+            <a href="#layanan" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-gray-800 hover:bg-red-50 hover:text-chery-red">Layanan Dealer Jabar</a>
+            <a href="#kontak-booking" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-gray-800 hover:bg-red-50 hover:text-chery-red">Kontak & Lokasi</a>
+            <div class="pt-3">
+                <a href="#kontak-booking" onclick="presetBooking('', 'Booking Test Drive')" class="mobile-link w-full flex justify-center items-center px-5 py-3 rounded-xl bg-chery-red text-white font-semibold shadow-md">
+                    <i class="fa-solid fa-calendar-check mr-2"></i> Booking Test Drive Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative bg-chery-dark text-white overflow-hidden">
+        <!-- Background Automotive Visual -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1920&q=80" 
+                 onerror="this.src='https://placehold.co/1920x900/111827/374151?text=Chery+Futuristic+SUV+Showroom+Jawa+Barat'"
+                 alt="Showroom Resmi Chery Jawa Barat" 
+                 class="w-full h-full object-cover object-center opacity-45">
+            <div class="absolute inset-0 bg-hero-pattern"></div>
+        </div>
+
+        <!-- Subtle Futuristic Red Glow Accent -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-chery-red/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-gray-200 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-chery-red animate-pulse"></span>
+                    <span>Dealer Resmi Chery Wilayah Jawa Barat &bull; Official Sales Portal</span>
+                </div>
+
+                <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Masa Depan Mobilitas <span class="text-transparent bg-clip-text bg-gradient-to-r from-chery-red to-red-400">Super Hybrid & EV</span> di Jawa Barat
+                </h1>
+
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl">
+                    Dapatkan informasi produk terlengkap, harga OTR resmi Jawa Barat, promo spesial bulan ini, serta layanan <strong class="text-white">Test Drive langsung ke rumah Anda</strong> untuk area Bandung, Cianjur, Bogor, Sukabumi, Sumedang, dan Garut.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#katalog" class="inline-flex justify-center items-center px-7 py-4 rounded-xl bg-chery-red hover:bg-chery-darkRed text-white font-bold text-base shadow-lg shadow-red-600/30 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-car-side mr-2.5"></i> Jelajahi 6 Model Chery
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Sales%20Resmi%20Pusat%20Chery%20Jabar%20(www.pusatcheryjabar.com),%20saya%20ingin%20konsultasi%20produk%20dan%20info%20promo%20terbaru." target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center px-7 py-4 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white font-bold text-base transition">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-xl mr-2.5"></i> Konsultasi sekarang
+                    </a>
+                </div>
+
+                <!-- Coverage Area Pills -->
+                <div class="border-t border-white/15 pt-6">
+                    <p class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-3">Area Layanan Sales & Pengiriman Unit Jawa Barat:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Bandung Raya</span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Cianjur</span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Bogor</span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Sukabumi</span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Garut</span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Sumedang</span>
+                        <span class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-200">Tasikmalaya & Priangan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog 6 Model Utama -->
+    <section id="katalog" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-red-100 text-chery-red text-xs font-bold uppercase tracking-wider mb-3">
+                    Line-Up Resmi Chery Indonesia
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-chery-dark mb-4">
+                    Katalog Model Unggulan Chery Jabar
+                </h2>
+                <p class="text-gray-600 text-base sm:text-lg">
+                    Temukan kendaraan berteknologi <strong class="text-gray-800">Chery Super Hybrid (CSH)</strong> dan <strong class="text-gray-800">Pure Electric Vehicle (EV)</strong> yang dirancang untuk kenyamanan dan efisiensi berkendara di seluruh medan Jawa Barat.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2.5 mb-10" id="filter-container">
+                <button data-filter="ALL" class="filter-btn active px-5 py-2.5 rounded-xl text-sm font-semibold bg-chery-dark text-white shadow-sm transition">
+                    Semua Model (6)
+                </button>
+                <button data-filter="CSH" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-white text-gray-700 border border-gray-200 hover:border-chery-red hover:text-chery-red transition">
+                    Chery Super Hybrid (CSH)
+                </button>
+                <button data-filter="EV" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-white text-gray-700 border border-gray-200 hover:border-chery-red hover:text-chery-red transition">
+                    Pure Electric (EV)
+                </button>
+                <button data-filter="SUV" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-white text-gray-700 border border-gray-200 hover:border-chery-red hover:text-chery-red transition">
+                    7-Seater & Off-Road SUV
+                </button>
+            </div>
+
+            <!-- Product Cards Grid (Rendered dynamically via JS for clean data management) -->
+            <div id="models-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cards injected by JavaScript -->
+            </div>
+
+            <!-- Note banner without credit simulation -->
+            <div class="mt-12 bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-chery-red flex items-center justify-center shrink-0 text-xl">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg text-chery-dark">Butuh Pricelist OTR Jawa Barat & E-Brosur Resmi?</h3>
+                        <p class="text-sm text-gray-600 mt-1">Hubungi konsultan sales resmi kami untuk mendapatkan daftar harga OTR terbaru sesuai kota/kabupaten Anda (Bandung, Bekasi, Bogor, Depok, Cirebon, Karawang, Tasikmalaya) beserta penawaran promo unit tersedia.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Pusat%20Chery%20Jabar%20(www.pusatcheryjabar.com),%20mohon%20dikirimkan%20Pricelist%20OTR%20Jawa%20Barat%20dan%20E-Brosur%20terbaru." target="_blank" rel="noopener noreferrer" class="w-full md:w-auto shrink-0 inline-flex justify-center items-center px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-md transition">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Minta Pricelist & Brosur
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Teknologi CSH & EV -->
+    <section id="teknologi" class="py-20 bg-metallic-grad text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column -->
+                <div class="lg:col-span-5">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-chery-red/20 border border-chery-red/40 text-red-400 text-xs font-bold uppercase tracking-wider mb-4">
+                        Inovasi Futuristik Chery
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold leading-tight mb-5">
+                        Teknologi <span class="text-chery-red">Chery Super Hybrid (CSH)</span> & Pure Electric
+                    </h2>
+                    <p class="text-gray-300 text-base leading-relaxed mb-6">
+                        Dirancang untuk menjawab kebutuhan perjalanan jarak jauh maupun mobilitas harian di perkotaan Jawa Barat yang dinamis—menghadirkan efisiensi bahan bakar luar biasa, akselerasi instan, dan standar keselamatan bintang 5 global.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3.5">
+                            <div class="w-8 h-8 rounded-lg bg-chery-red/20 text-chery-red flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Efisiensi Termal Mesin Generasi Baru</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">Perpaduan motor listrik bertenaga tinggi dan mesin hybrid ultra-efisien untuk jarak tempuh maksimal.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3.5">
+                            <div class="w-8 h-8 rounded-lg bg-chery-red/20 text-chery-red flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Sistem Keamanan Baterai IP68 & ADAS Lengkap</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">Perlindungan baterai tahan air dan debu serta fitur keselamatan aktif pintar di setiap perjalanan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Cards -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-chery-red/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-chery-red to-red-700 flex items-center justify-center text-white text-xl mb-4 shadow-lg">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-white mb-2">Chery Super Hybrid (CSH)</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Hadir pada lini <strong class="text-white">C5 CSH, Tiggo Cross CSH, Tiggo 8 CSH,</strong> hingga <strong class="text-white">Tiggo 9 CSH</strong>. Memberikan sensasi berkendara senyap layaknya mobil listrik tanpa khawatir mencari stasiun pengisian daya saat perjalanan luar kota.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-chery-red/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center text-white text-xl mb-4 shadow-lg">
+                            <i class="fa-solid fa-charging-station"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-white mb-2">Pure Electric Vehicle (EV)</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Diwakili oleh <strong class="text-white">Chery Q EV</strong> yang lincah untuk perkotaan dan <strong class="text-white">J6 Series</strong> sebagai SUV listrik berdesain boxy off-road ikonik dengan kemampuan jelajah tangguh dan nol emisi.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-chery-red/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white text-xl mb-4 shadow-lg">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-white mb-2">Smart Cockpit & Voice Command</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Layar dual-screen resolusi tinggi, konektivitas Apple CarPlay & Android Auto nirkabel, serta asisten suara cerdas untuk kontrol fitur kabin tanpa melepas tangan dari kemudi.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-chery-red/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white text-xl mb-4 shadow-lg">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-white mb-2">Adaptif Medan Jawa Barat</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Torsi instan dan suspensi terkalibrasi presisi menjadikan seluruh jajaran Chery tangguh melibas tanjakan Lembang, Puncak, hingga jalur tol Trans Jawa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Dealer & Purna Jual -->
+    <section id="layanan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-gray-100 text-gray-800 text-xs font-bold uppercase tracking-wider mb-3">
+                    Komitmen Purna Jual Resmi
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-chery-dark mb-4">
+                    Layanan Eksklusif Pusat Chery Jabar
+                </h2>
+                <p class="text-gray-600 text-base">
+                    Kenyamanan Anda dimulai sejak konsultasi pertama hingga perawatan berkala kendaraan Chery kesayangan Anda di seluruh wilayah Jawa Barat.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-chery-red flex items-center justify-center text-xl mb-5 group-hover:bg-chery-red group-hover:text-white transition">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-chery-dark mb-2">Garansi Baterai & Mesin</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Perlindungan garansi resmi pabrikan jangka panjang untuk komponen baterai EV/Hybrid, motor listrik, dan mesin demi ketenangan berkendara.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-chery-red flex items-center justify-center text-xl mb-5 group-hover:bg-chery-red group-hover:text-white transition">
+                        <i class="fa-solid fa-house-chimney-user"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-chery-dark mb-2">Home Test Drive Jabar</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Tidak sempat ke showroom? Tim sales resmi kami siap membawa unit test drive pilihan langsung ke rumah atau kantor Anda di area Jawa Barat.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-chery-red flex items-center justify-center text-xl mb-5 group-hover:bg-chery-red group-hover:text-white transition">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-chery-dark mb-2">Bengkel Resmi & Home Service</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Dukungan jaringan bengkel resmi berstandar 3S (Sales, Service, Sparepart) serta layanan Chery Mobile Service untuk perawatan praktis.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-chery-red flex items-center justify-center text-xl mb-5 group-hover:bg-chery-red group-hover:text-white transition">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-chery-dark mb-2">Layanan Tukar Tambah (Trade-In)</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Upgrade mobil lama Anda (semua merek) ke mobil baru Chery dengan proses appraisal transparan, cepat, dan penawaran harga terbaik.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Form Booking Test Drive / Konsultasi Produk -->
+    <section id="kontak-booking" class="py-20 bg-gray-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="inline-block px-3.5 py-1 rounded-full bg-red-100 text-chery-red text-xs font-bold uppercase tracking-wider mb-3">
+                            Hubungi Kami
+                        </span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-chery-dark mb-4">
+                            Booking Test Drive & Konsultasi Produk
+                        </h2>
+                        <p class="text-gray-600 text-base leading-relaxed">
+                            Isi formulir di samping untuk menjadwalkan sesi test drive, meminta e-brosur resmi, pricelist OTR Jawa Barat, atau konsultasi tukar tambah kendaraan Anda langsung via WhatsApp Sales Resmi.
+                        </p>
+                    </div>
+
+                    <!-- Direct Contact Card -->
+                    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Hotline Sales & Test Drive Jabar</p>
+                                <p class="font-display font-bold text-lg text-chery-dark"> +62 896-6214-9621 </p>
+                                <p class="text-xs text-emerald-600 font-medium"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Online & Fast Response</p>
+                            </div>
+                        </div>
+
+                        <hr class="border-gray-100">
+
+                        <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-building text-chery-red mt-1"></i>
+                                <span><strong class="text-gray-800">Showroom Utama Bandung:</strong> Jl. Soekarno Hatta No. 483, Kota Bandung, Jawa Barat</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-map-location-dot text-chery-red mt-1"></i>
+                                <span><strong class="text-gray-800">Cabang Jaringan Jabar:</strong> Cianjur </span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-globe text-chery-red mt-1"></i>
+                                <span><strong class="text-gray-800">Website Resmi:</strong> www.pusatcheryjabar.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-xl">
+                        <div class="flex items-center justify-between border-b border-gray-100 pb-5 mb-6">
+                            <div>
+                                <h3 class="font-display font-bold text-xl text-chery-dark">Formulir Layanan Pelanggan</h3>
+                                <p class="text-xs text-gray-500 mt-1">Terhubung langsung ke WhatsApp Konsultan Resmi Pusat Chery Jabar</p>
+                            </div>
+                            <div class="w-10 h-10 rounded-xl bg-red-50 text-chery-red flex items-center justify-center">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+
+                        <form id="booking-form" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <!-- Nama Lengkap -->
+                                <div>
+                                    <label for="customer-name" class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Lengkap <span class="text-chery-red">*</span></label>
+                                    <input type="text" id="customer-name" required placeholder="Contoh: Budi Santoso" 
+                                           class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-chery-red focus:border-chery-red transition">
+                                </div>
+
+                                <!-- Nomor WhatsApp -->
+                                <div>
+                                    <label for="customer-wa" class="block text-sm font-semibold text-gray-700 mb-1.5">Nomor WhatsApp Aktif <span class="text-chery-red">*</span></label>
+                                    <input type="tel" id="customer-wa" required placeholder="Contoh: 08123456789" 
+                                           class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-chery-red focus:border-chery-red transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <!-- Kota / Kabupaten di Jawa Barat -->
+                                <div>
+                                    <label for="customer-city" class="block text-sm font-semibold text-gray-700 mb-1.5">Kota / Kabupaten (Jawa Barat) <span class="text-chery-red">*</span></label>
+                                    <select id="customer-city" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-chery-red focus:border-chery-red transition">
+                                        <option value="" disabled selected>Pilih Domisili Anda...</option>
+                                        <option value="Kota Bandung">Kota Bandung</option>
+                                        <option value="Kabupaten Bandung / Bandung Barat / Cimahi">Kab. Bandung / KBB / Cimahi</option>
+                                        <option value="Kota & Kabupaten Cianjur">Kota & Kabupaten Cianjur</option>
+                                        <option value="Kota & Kabupaten Bogor">Kota & Kabupaten Bogor</option>
+                                        <option value="Tasikmalaya / Garut / Ciamis">Tasikmalaya / Garut / Ciamis</option>
+                                        <option value="Sukabumi / Cianjur">Sukabumi / Cianjur</option>
+                                        <option value="Sumedang / Majalengka">Sumedang / Majalengka</option>
+                                    </select>
+                                </div>
+
+                                <!-- Pilihan Model Mobil (6 Model Utama) -->
+                                <div>
+                                    <label for="customer-model" class="block text-sm font-semibold text-gray-700 mb-1.5">Pilihan Model Mobil <span class="text-chery-red">*</span></label>
+                                    <select id="customer-model" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-chery-red focus:border-chery-red transition">
+                                        <option value="" disabled selected>Pilih Model Chery...</option>
+                                        <option value="CHERY Q EV">CHERY Q EV (Pure Electric City Car)</option>
+                                        <option value="C5 CSH">C5 CSH (Chery Super Hybrid Crossover)</option>
+                                        <option value="TIGGO 8 CSH">TIGGO 8 CSH (7-Seater Luxury Hybrid SUV)</option>
+                                        <option value="TIGGO CROSS CSH">TIGGO CROSS CSH (Compact Super Hybrid SUV)</option>
+                                        <option value="TIGGO 9 CSH">TIGGO 9 CSH (Flagship 7-Seater Super Hybrid)</option>
+                                        <option value="J6 SERIES">J6 SERIES (Off-Road Boxy Electric SUV)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Jenis Layanan -->
+                            <div>
+                                <label for="customer-service" class="block text-sm font-semibold text-gray-700 mb-1.5">Jenis Layanan yang Dibutuhkan <span class="text-chery-red">*</span></label>
+                                <select id="customer-service" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-chery-red focus:border-chery-red transition">
+                                    <option value="Booking Test Drive (Showroom / Home Service)">Booking Test Drive (Showroom / Home Service)</option>
+                                    <option value="Permintaan E-Brosur & Pricelist OTR Jawa Barat">Permintaan E-Brosur & Pricelist OTR Jawa Barat</option>
+                                    <option value="Konsultasi Trade-In (Tukar Tambah Mobil Lama)">Konsultasi Trade-In (Tukar Tambah Mobil Lama)</option>
+                                    <option value="Cek Ketersediaan Stok & Warna Unit">Cek Ketersediaan Stok & Warna Unit</option>
+                                </select>
+                            </div>
+
+                            <!-- Catatan Tambahan -->
+                            <div>
+                                <label for="customer-notes" class="block text-sm font-semibold text-gray-700 mb-1.5">Catatan Tambahan (Opsional)</label>
+                                <textarea id="customer-notes" rows="2" placeholder="Contoh: Ingin jadwal test drive hari Sabtu pagi di rumah..." 
+                                          class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-chery-red focus:border-chery-red transition"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full py-4 px-6 rounded-xl bg-chery-red hover:bg-chery-darkRed text-white font-bold text-base shadow-lg shadow-red-600/25 transition flex items-center justify-center space-x-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Kirim Permintaan via WhatsApp Sekarang</span>
+                            </button>
+                        </form>
+
+                        <!-- Interactive Feedback Box (Replaces alert) -->
+                        <div id="form-feedback" class="hidden mt-5 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-lg mt-0.5"></i>
+                                <div class="flex-1">
+                                    <p class="font-bold">Data Berhasil Disiapkan!</p>
+                                    <p id="feedback-summary" class="text-xs text-emerald-700 mt-1"></p>
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        <a id="wa-direct-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition">
+                                            <i class="fa-brands fa-whatsapp mr-1.5"></i> Buka Chat WhatsApp
+                                        </a>
+                                        <button type="button" onclick="copyMessageText()" class="inline-flex items-center px-3 py-2 rounded-lg bg-white border border-emerald-300 text-emerald-800 hover:bg-emerald-100 text-xs font-semibold transition">
+                                            <i class="fa-regular fa-copy mr-1.5"></i> Salin Pesan
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-chery-dark text-gray-300 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+                <!-- Brand Info -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-chery-red flex items-center justify-center text-white">
+                            <svg class="w-6 h-6" viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 4L8 34H17L32 15L47 34H56L32 4Z" fill="white"/>
+                                <path d="M18 22H46L42 27H22L18 22Z" fill="white" fill-opacity="0.85"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-display font-extrabold text-lg text-white tracking-tight block leading-none">PUSAT CHERY <span class="text-chery-red">JABAR</span></span>
+                            <span class="text-[11px] text-gray-400">www.pusatcheryjabar.com</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Portal informasi resmi penjualan, pameran, dan layanan test drive mobil Chery untuk seluruh wilayah Jawa Barat. Menghadirkan teknologi Super Hybrid (CSH) dan kendaraan listrik (EV) masa depan.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-chery-red text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#beranda" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-chery-red text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#beranda" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-chery-red text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigasi Cepat -->
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider">Navigasi</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="#katalog" class="hover:text-white transition">Katalog Model</a></li>
+                        <li><a href="#teknologi" class="hover:text-white transition">Teknologi CSH & EV</a></li>
+                        <li><a href="#layanan" class="hover:text-white transition">Layanan Dealer</a></li>
+                        <li><a href="#kontak-booking" class="hover:text-white transition">Booking Test Drive</a></li>
+                    </ul>
+                </div>
+
+                <!-- Katalog Model -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider">Line-Up Model Chery</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><button type="button" onclick="openModelModal('q-ev')" class="hover:text-chery-red transition text-left">CHERY Q EV</button></li>
+                        <li><button type="button" onclick="openModelModal('c5-csh')" class="hover:text-chery-red transition text-left">C5 CSH</button></li>
+                        <li><button type="button" onclick="openModelModal('tiggo-8-csh')" class="hover:text-chery-red transition text-left">TIGGO 8 CSH</button></li>
+                        <li><button type="button" onclick="openModelModal('tiggo-cross-csh')" class="hover:text-chery-red transition text-left">TIGGO CROSS CSH</button></li>
+                        <li><button type="button" onclick="openModelModal('tiggo-9-csh')" class="hover:text-chery-red transition text-left">TIGGO 9 CSH</button></li>
+                        <li><button type="button" onclick="openModelModal('j6-series')" class="hover:text-chery-red transition text-left">J6 SERIES</button></li>
+                    </ul>
+                </div>
+
+                <!-- Jaringan Cabang Jawa Barat -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider">Area Showroom Jabar</h4>
+                    <ul class="space-y-2.5 text-xs text-gray-400 leading-relaxed">
+                        <li><strong class="text-gray-200">Bandung:</strong> Jl. Soekarno Hatta No. 483, Bandung</li>
+                        <li><strong class="text-gray-200">Cianjur:</strong> Jl. Raya Bandung no.115, Kota Cianjur</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 <strong class="text-gray-300">Pusat Chery Jabar (www.pusatcheryjabar.com)</strong>. Hak Cipta Dilindungi.</p>
+                <p>Website Resmi Informasi Produk & Pemesanan Mobil Chery Wilayah Jawa Barat.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Quick Action Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Sales%20Resmi%20Pusat%20Chery%20Jabar%20(www.pusatcheryjabar.com),%20saya%20ingin%20tanya%20info%20mobil%20Chery." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat WhatsApp Sales Chery Jabar"
+       class="fixed bottom-6 right-6 z-40 flex items-center space-x-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3.5 rounded-full shadow-2xl shadow-emerald-900/40 transition transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="font-semibold text-sm hidden sm:inline">Tanya Sales Jabar</span>
+    </a>
+
+    <!-- Modal Pop-Up Spesifikasi Detail Model -->
+    <div id="spec-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-gray-900/80 backdrop-blur-sm transition-opacity" onclick="closeModelModal()"></div>
+
+        <div class="flex min-h-full items-center justify-center p-4 sm:p-6">
+            <div class="relative w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white shadow-2xl transition-all border border-gray-200">
+                <!-- Modal Header Image & Close Button -->
+                <div class="relative h-56 sm:h-72 bg-chery-dark">
+                    <img id="modal-img" src="" alt="Detail Mobil Chery" class="w-full h-full object-cover opacity-85">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                    
+                    <button type="button" onclick="closeModelModal()" aria-label="Tutup Modal" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/50 hover:bg-chery-red text-white flex items-center justify-center backdrop-blur-md transition">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+
+                    <div class="absolute bottom-5 left-6 right-6">
+                        <span id="modal-badge" class="inline-block px-3 py-1 rounded-lg bg-chery-red text-white text-xs font-bold uppercase tracking-wider mb-2"></span>
+                        <h3 id="modal-title" class="font-display text-2xl sm:text-3xl font-extrabold text-white"></h3>
+                        <p id="modal-tagline" class="text-sm text-gray-200 mt-1"></p>
+                    </div>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="p-6 sm:p-8 max-h-[65vh] overflow-y-auto space-y-6">
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-wider text-chery-red mb-2">Gambaran Umum Model</h4>
+                        <p id="modal-desc" class="text-sm sm:text-base text-gray-600 leading-relaxed"></p>
+                    </div>
+
+                    <!-- Spesifikasi Utama Grid -->
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-wider text-chery-red mb-3">Spesifikasi & Performa Unggulan</h4>
+                        <div id="modal-specs-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Fitur Unggulan List -->
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-wider text-chery-red mb-3">Fitur Kenyamanan & Keselamatan</h4>
+                        <ul id="modal-features-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-gray-700">
+                            <!-- Injected by JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modal Footer CTA -->
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <button type="button" id="modal-book-btn" class="w-full sm:w-auto inline-flex justify-center items-center px-5 py-3 rounded-xl bg-chery-dark hover:bg-gray-800 text-white text-sm font-semibold transition">
+                        <i class="fa-solid fa-calendar-check mr-2"></i> Jadwalkan Test Drive Model Ini
+                    </button>
+                    <a id="modal-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 rounded-xl bg-chery-red hover:bg-chery-darkRed text-white text-sm font-bold shadow-md transition">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Tanya Harga OTR & Promo (WA)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Nomor WhatsApp Sales Pusat Chery Jabar (Ganti dengan nomor WA admin dealer Anda)
+        const DEALER_WA_NUMBER = "6289662149621";
+
+        // Data Lengkap 6 Model Mobil Chery
+        const cheryModels = [
+            {
+                id: "q-ev",
+                name: "CHERY Q EV",
+                category: "EV",
+                badge: "PURE ELECTRIC • CITY EV",
+                badgeColor: "bg-sky-600",
+                tagline: "City EV Modern, Lincah & Efisien untuk Perkotaan",
+                shortDesc: "Mobil listrik perkotaan berdesain futuristik dengan dimensi ringkas, interior cerdas, dan biaya operasional super hemat untuk mobilitas harian di kota-kota Jawa Barat.",
+                image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=900&q=80",
+                fallbackImg: "https://placehold.co/900x560/1f2937/ffffff?text=CHERY+Q+EV",
+                highlights: [
+                    "100% Pure Electric Zero Emission",
+                    "Fast Charging & Home Charging Ready",
+                    "Smart Digital Cockpit & Kamera 360°"
+                ],
+                specs: [
+                    { label: "Sistem Penggerak", value: "Pure Electric Motor (EV)" },
+                    { label: "Konfigurasi Kabin", value: "Compact City Hatchback 4-5 Seater" },
+                    { label: "Pengisian Daya", value: "DC Fast Charging & AC Wallbox" },
+                    { label: "Mode Berkendara", value: "Eco / Normal / Sport" }
+                ],
+                features: [
+                    "Layar Infotainment Layar Sentuh HD",
+                    "Sistem Pengereman ABS + EBD + ESP",
+                    "Radius Putar Ringkas & Lincah di Kemacetan",
+                    "Smart Keyless Entry & Push Start",
+                    "Struktur Rangka Baja Berkekuatan Tinggi",
+                    "Garansi Baterai EV Resmi Pabrikan"
+                ]
+            },
+            {
+                id: "c5-csh",
+                name: "C5 CSH",
+                category: "CSH",
+                badge: "CHERY SUPER HYBRID • CROSSOVER",
+                badgeColor: "bg-chery-red",
+                tagline: "Crossover SUV Stylish dengan Teknologi Chery Super Hybrid",
+                shortDesc: "Perpaduan desain futuristik ikonik seri C5 dengan efisiensi luar biasa teknologi Chery Super Hybrid (CSH). Responsif, bertenaga, dan sangat irit untuk dalam maupun luar kota.",
+                image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=80",
+                fallbackImg: "https://placehold.co/900x560/1f2937/ffffff?text=CHERY+C5+CSH",
+                highlights: [
+                    "Teknologi Chery Super Hybrid (CSH)",
+                    "Desain Avant-Garde & Velg Sporty",
+                    "Fitur ADAS Lengkap & Dual HD Screen"
+                ],
+                specs: [
+                    { label: "Teknologi Mesin", value: "Chery Super Hybrid (CSH)" },
+                    { label: "Tipe Bodi", value: "5-Seater Futuristic Crossover SUV" },
+                    { label: "Transmisi", value: "Dedicated Hybrid Transmission (DHT)" },
+                    { label: "Sistem Keselamatan", value: "Full ADAS + 6 Airbags" }
+                ],
+                features: [
+                    "Dual 10.25-inch Integrated HD Display",
+                    "Wireless Apple CarPlay & Android Auto",
+                    "Adaptive Cruise Control & Lane Keeping",
+                    "Electric Sunroof & Ambient Light Kabin",
+                    "Ventilated Front Seats (Kursi Berpendingin)",
+                    "Kamera 540° Panoramic HD"
+                ]
+            },
+            {
+                id: "tiggo-8-csh",
+                name: "TIGGO 8 CSH",
+                category: "CSH SUV",
+                badge: "CSH • 7-SEATER LUXURY SUV",
+                badgeColor: "bg-chery-red",
+                tagline: "SUV Keluarga 7-Seater Mewah Bertenaga Super Hybrid",
+                shortDesc: "Kabin luas berkapasitas 7 penumpang dengan kemewahan kelas atas dan efisiensi Chery Super Hybrid. Pilihan ideal untuk perjalanan keluarga melintasi tol dan pegunungan Jawa Barat.",
+                image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80",
+                fallbackImg: "https://placehold.co/900x560/1f2937/ffffff?text=TIGGO+8+CSH",
+                highlights: [
+                    "Kabin 7-Seater Premium & Lega",
+                    "Performa Chery Super Hybrid Bertenaga",
+                    "Panoramic Sunroof & Sony Premium Audio"
+                ],
+                specs: [
+                    { label: "Teknologi Mesin", value: "1.5T Dedicated Hybrid + Dual Motor" },
+                    { label: "Kapasitas Penumpang", value: "7-Seater Luxury SUV" },
+                    { label: "Jarak Tempuh Kombinasi", value: "Hingga >1.000 km (Full Tank + Battery)" },
+                    { label: "Fitur Eksternal", value: "V2L (Vehicle-to-Load) Power Supply" }
+                ],
+                features: [
+                    "Kabin Kedap Suara dengan Kaca Akustik",
+                    "Jok Kulit Premium + Electric Memory Seat",
+                    "Panoramic Power Sunroof Luas",
+                    "Dual-Zone Automatic Climate Control + PM2.5",
+                    "Power Tailgate (Pintu Bagasi Elektrik)",
+                    "10+ Fitur Keselamatan Aktif ADAS"
+                ]
+            },
+            {
+                id: "tiggo-cross-csh",
+                name: "TIGGO CROSS CSH",
+                category: "CSH",
+                badge: "CHERY SUPER HYBRID • COMPACT SUV",
+                badgeColor: "bg-chery-red",
+                tagline: "Compact SUV Tangguh, Modern & Super Efisien",
+                shortDesc: "Compact SUV berkarakter gagah yang memadukan kelincahan manuver perkotaan dengan ketangguhan suspensi dan penghematan bahan bakar maksimal dari sistem Chery Super Hybrid.",
+                image: "https://drive.google.com/file/d/1KymdNWDIdXWu2Sxfz3e0yJq6CeZDuDd-/view?usp=drivesdk",
+                fallbackImg: "https://placehold.co/900x560/1f2937/ffffff?text=TIGGO+CROSS+CSH",
+                highlights: [
+                    "Kombinasi Efisiensi CSH & Ground Clearance Tinggi",
+                    "Tiger-Face Diamond Grille Ikonik",
+                    "Kabin Modern dengan Konektivitas Cerdas"
+                ],
+                specs: [
+                    { label: "Teknologi Mesin", value: "Chery Super Hybrid System (CSH)" },
+                    { label: "Tipe Bodi", value: "5-Seater Compact Urban SUV" },
+                    { label: "Suspensi", value: "Comfort-Tuned Independent Suspension" },
+                    { label: "Konektivitas", value: "Smart Voice Assistant & Wireless Charger" }
+                ],
+                features: [
+                    "Lampu Utama LED Projector Otomatis",
+                    "Dual Digital Display Kokpit Modern",
+                    "Hill Start Assist & Hill Descent Control",
+                    "Blind Spot Detection & Rear Cross Traffic Alert",
+                    "Bagasi Fleksibel dengan Lipatan Kursi Rata",
+                    "Konsumsi BBM Sangat Efisien di Rute Macet"
+                ]
+            },
+            {
+                id: "tiggo-9-csh",
+                name: "TIGGO 9 CSH",
+                category: "CSH SUV",
+                badge: "FLAGSHIP CSH • 7-SEATER SUV",
+                badgeColor: "bg-amber-600",
+                tagline: "Flagship Luxury SUV 7-Seater dengan Performa Tertinggi",
+                shortDesc: "Puncak kemewahan dan teknologi dalam jajaran SUV Chery. Menghadirkan kenyamanan kelas eksekutif, tenaga buas Chery Super Hybrid, serta fitur keselamatan paling komprehensif.",
+                image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80",
+                fallbackImg: "https://placehold.co/900x560/1f2937/ffffff?text=TIGGO+9+CSH",
+                highlights: [
+                    "Flagship 7-Seater SUV Kelas Atas",
+                    "Performa Super Hybrid Bertenaga Besar",
+                    "Kursi Pijat, Ventilasi & Head-Up Display"
+                ],
+                specs: [
+                    { label: "Teknologi Mesin", value: "Flagship Chery Super Hybrid (CSH)" },
+                    { label: "Kapasitas Kabin", value: "7-Seater Executive Flagship SUV" },
+                    { label: "Sistem Suspensi", value: "CDC Adaptive Suspension Comfort" },
+                    { label: "Keamanan Pasif", value: "10 Airbags + High-Strength Cage Body" }
+                ],
+                features: [
+                    "Queen Co-Pilot Seat dengan Leg Rest & Pijat",
+                    "Head-Up Display (W-HUD) di Kaca Depan",
+                    "14-Speaker Surround Sound System",
+                    "Automatic Parking Assistant (APA)",
+                    "Layar Sentuh Resolusi 2.5K Ultra-Jernih",
+                    "Fitur V2L untuk Kebutuhan Outdoor & Camping"
+                ]
+            },
+            {
+                id: "j6-series",
+                name: "J6 SERIES",
+                category: "EV SUV",
+                badge: "PURE ELECTRIC • OFF-ROAD SUV",
+                badgeColor: "bg-emerald-600",
+                tagline: "Off-Road Boxy Electric SUV dengan Desain Ikonik",
+                shortDesc: "SUV listrik murni berdesain boxy gagah dengan struktur bodi all-aluminum ringan dan kokoh. Siap menaklukkan jalanan perkotaan maupun jalur petualangan alam Jawa Barat.",
+                image: "https://drive.google.com/file/d/1bNS3upQcNpmb59ZoZ55wnk9yqIA2trsk/view?usp=drivesdk",
+                fallbackImg: "https://placehold.co/900x560/1f2937/ffffff?text=CHERY+J6+SERIES",
+                highlights: [
+                    "Desain Boxy Off-Road Ikonik & Maskulin",
+                    "All-Aluminum Body & Opsi Penggerak iWD",
+                    "Multi-Terrain Driving Modes & Velg Tangguh"
+                ],
+                specs: [
+                    { label: "Sistem Penggerak", value: "Pure Electric (RWD / Intelligent AWD)" },
+                    { label: "Konstruksi Rangka", value: "All-Aluminum Multi-Cavity Cage Body" },
+                    { label: "Kapabilitas Medan", value: "8+1 All-Terrain Driving Modes" },
+                    { label: "Sertifikasi Baterai", value: "IP68 / IPX9K Water & Dust Resistant" }
+                ],
+                features: [
+                    "Layar Tengah 15.6-inch Chipset Snapdragon",
+                    "Sistem Audio Infinity 12-Speaker Premium",
+                    "Kursi Depan Berventilasi & Fitur Pijat",
+                    "Panoramic Sunroof & Roof Rail Fungsional",
+                    "Fitur V2L (Vehicle-to-Load) 3.3 kW",
+                    "Kemampuan Melibas Genangan Air & Jalur Berbatu"
+                ]
+            }
+        ];
+
+        // Render Katalog Cards
+        const modelsGrid = document.getElementById('models-grid');
+
+        function renderModels(filter = 'ALL') {
+            modelsGrid.innerHTML = '';
+
+            const filtered = cheryModels.filter(model => {
+                if (filter === 'ALL') return true;
+                return model.category.includes(filter);
+            });
+
+            filtered.forEach(model => {
+                const waText = encodeURIComponent(`Halo Sales Resmi Pusat Chery Jabar (www.pusatcheryjabar.com), saya tertarik dengan unit *${model.name}*. Mohon info harga OTR Jawa Barat dan promo terbarunya.`);
+                const waUrl = `https://wa.me/${DEALER_WA_NUMBER}?text=${waText}`;
+
+                const card = document.createElement('article');
+                card.className = "bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Image Container -->
+                        <div class="relative h-56 overflow-hidden bg-chery-dark">
+                            <img src="${model.image}" 
+                                 onerror="this.src='${model.fallbackImg}'"
+                                 alt="${model.name} - Pusat Chery Jabar" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/75 via-transparent to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-lg ${model.badgeColor} text-white text-[11px] font-bold tracking-wider uppercase shadow-md">
+                                ${model.badge}
+                            </span>
+                            <div class="absolute bottom-3 left-4 right-4 flex justify-between items-end">
+                                <h3 class="font-display text-2xl font-extrabold text-white tracking-tight">${model.name}</h3>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-6">
+                            <p class="text-xs font-bold text-chery-red uppercase tracking-wide mb-2">${model.tagline}</p>
+                            <p class="text-sm text-gray-600 leading-relaxed mb-5">${model.shortDesc}</p>
+
+                            <!-- Key Highlights -->
+                            <div class="space-y-2 border-t border-gray-100 pt-4">
+                                ${model.highlights.map(item => `
+                                    <div class="flex items-center text-xs font-medium text-gray-700">
+                                        <i class="fa-solid fa-circle-check text-chery-red mr-2 shrink-0"></i>
+                                        <span>${item}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Action Buttons -->
+                    <div class="px-6 pb-6 pt-2 space-y-2.5">
+                        <button type="button" onclick="openModelModal('${model.id}')" class="w-full py-3 px-4 rounded-xl bg-gray-100 hover:bg-chery-dark text-gray-800 hover:text-white font-semibold text-sm transition flex items-center justify-center">
+                            <i class="fa-solid fa-list-check mr-2"></i> Lihat Detail / Spesifikasi
+                        </button>
+                        <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-chery-red hover:bg-chery-darkRed text-white font-bold text-sm shadow-sm transition flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-base mr-2"></i> Tanya Harga & Promo (WA)
+                        </a>
+                    </div>
+                `;
+
+                modelsGrid.appendChild(card);
+            });
+        }
+
+        // Initial render
+        renderModels('ALL');
+
+        // Filter Button Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-chery-dark', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+                });
+                btn.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+                btn.classList.add('bg-chery-dark', 'text-white', 'shadow-sm');
+
+                const filterVal = btn.getAttribute('data-filter');
+                renderModels(filterVal);
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Modal Detail Spesifikasi Logic
+        const specModal = document.getElementById('spec-modal');
+
+        function openModelModal(modelId) {
+            const model = cheryModels.find(m => m.id === modelId);
+            if (!model) return;
+
+            document.getElementById('modal-img').src = model.image;
+            document.getElementById('modal-img').onerror = function() { this.src = model.fallbackImg; };
+            document.getElementById('modal-badge').textContent = model.badge;
+            document.getElementById('modal-title').textContent = model.name;
+            document.getElementById('modal-tagline').textContent = model.tagline;
+            document.getElementById('modal-desc').textContent = model.shortDesc;
+
+            // Populate Specs Grid
+            const specsGrid = document.getElementById('modal-specs-grid');
+            specsGrid.innerHTML = model.specs.map(s => `
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-3.5">
+                    <p class="text-[11px] uppercase tracking-wider font-semibold text-gray-400">${s.label}</p>
+                    <p class="text-sm font-bold text-chery-dark mt-0.5">${s.value}</p>
+                </div>
+            `).join('');
+
+            // Populate Features List
+            const featuresList = document.getElementById('modal-features-list');
+            featuresList.innerHTML = model.features.map(f => `
+                <li class="flex items-start space-x-2">
+                    <i class="fa-solid fa-check text-chery-red mt-1 shrink-0"></i>
+                    <span>${f}</span>
+                </li>
+            `).join('');
+
+            // Set Modal WA Button Link
+            const waText = encodeURIComponent(`Halo Pusat Chery Jabar (www.pusatcheryjabar.com), saya telah melihat detail spesifikasi *${model.name}*. Mohon info harga OTR Jawa Barat, ketersediaan stok, dan promo terbaru.`);
+            document.getElementById('modal-wa-btn').href = `https://wa.me/${DEALER_WA_NUMBER}?text=${waText}`;
+
+            // Set Modal Test Drive Button
+            document.getElementById('modal-book-btn').onclick = function() {
+                closeModelModal();
+                presetBooking(model.name, 'Booking Test Drive (Showroom / Home Service)');
+                document.getElementById('kontak-booking').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            specModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModelModal() {
+            specModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !specModal.classList.contains('hidden')) {
+                closeModelModal();
+            }
+        });
+
+        // Preset Form Helper
+        function presetBooking(modelName, serviceType) {
+            const modelSelect = document.getElementById('customer-model');
+            const serviceSelect = document.getElementById('customer-service');
+
+            if (modelName) {
+                for (let i = 0; i < modelSelect.options.length; i++) {
+                    if (modelSelect.options[i].value === modelName) {
+                        modelSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            if (serviceType) {
+                for (let i = 0; i < serviceSelect.options.length; i++) {
+                    if (serviceSelect.options[i].value.includes(serviceType)) {
+                        serviceSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Booking Form Submission & WhatsApp Redirect
+        let generatedMessagePlain = "";
+
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('customer-name').value.trim();
+            const wa = document.getElementById('customer-wa').value.trim();
+            const city = document.getElementById('customer-city').value;
+            const model = document.getElementById('customer-model').value;
+            const service = document.getElementById('customer-service').value;
+            const notes = document.getElementById('customer-notes').value.trim();
+
+            generatedMessagePlain = 
+`Halo Sales Resmi *PUSAT CHERY JABAR* (www.pusatcheryjabar.com),
+Saya ingin mengajukan permintaan layanan melalui website:
+
+• *Nama:* ${name}
+• *No. WhatsApp:* ${wa}
+• *Domisili (Jawa Barat):* ${city}
+• *Model Pilihan:* ${model}
+• *Jenis Layanan:* ${service}${notes ? `\n• *Catatan:* ${notes}` : ''}
+
+Mohon dibantu informasi selengkapnya. Terima kasih.`;
+
+            const waUrl = `https://wa.me/${6289662149621}?text=${encodeURIComponent(generatedMessagePlain)}`;
+
+            // Show interactive confirmation box
+            const feedbackBox = document.getElementById('form-feedback');
+            const feedbackSummary = document.getElementById('feedback-summary');
+            const waDirectLink = document.getElementById('wa-direct-link');
+
+            feedbackSummary.textContent = `Permintaan untuk unit ${model} (${service}) atas nama ${name} dari ${city} telah siap dikirim ke WhatsApp Sales Resmi.`;
+            waDirectLink.href = waUrl;
+            feedbackBox.classList.remove('hidden');
+
+            // Automatically open WhatsApp in new tab
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        });
+
+        // Copy Message Helper (Using document.execCommand for iframe compatibility)
+        function copyMessageText() {
+            if (!generatedMessagePlain) return;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = generatedMessagePlain;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            try {
+                document.execCommand('copy');
+                const feedbackSummary = document.getElementById('feedback-summary');
+                feedbackSummary.innerHTML = `<span class="font-semibold text-emerald-900">Pesan berhasil disalin ke clipboard!</span> Silakan tempel di WhatsApp jika jendela chat belum terbuka otomatis.`;
+            } catch (err) {
+                console.error('Gagal menyalin teks:', err);
+            }
+            document.body.removeChild(tempTextArea);
+        }
+    </script>
+</body>
+</html>
